@@ -2,6 +2,7 @@ const notesObj = require('./notes.js');
 const yargs = require('yargs');
 
 // adding a command
+//builder for options with command line argument
 yargs.command({
 command: 'add',
 describe:'add a new note',
@@ -62,4 +63,5 @@ yargs.command({
        notesObj.listNotes();
     }
 });
+
 yargs.parse();  //important to use yargs

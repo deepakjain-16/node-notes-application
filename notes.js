@@ -61,9 +61,16 @@ const loadNotes = () => {
 const saveNotes = (arr)=>{
     fs.writeFileSync('notes.json',JSON.stringify(arr)); 
 }
+// module.exports = {
+//     addNotes: addNotes,
+//     removeNotes: removeNotes,
+//     listNotes:listNotes,
+//     readNote:readNote
+// }
+// property shorthand
 module.exports = {
-    addNotes: addNotes,
-    removeNotes: removeNotes,
-    listNotes:listNotes,
-    readNote:readNote
+     addNotes,
+     removeNotes,
+    listNotes,
+    readNote
 }
